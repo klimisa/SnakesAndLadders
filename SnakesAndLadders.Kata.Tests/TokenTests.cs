@@ -7,7 +7,7 @@ namespace SnakesAndLadders.Kata.Tests
     public class TokenTests
     {
         [Fact]
-        public void GivenThenGameIsStarted_WhenTokenIsPlacedOnBoard_ThenTokenIsOnSquareOne()
+        public void GivenGameIsStarted_WhenTokenIsPlacedOnBoard_ThenTokenIsOnSquareOne()
         {
             // Arrange / Act
             var token = new Token();
