@@ -1,4 +1,3 @@
-using System;
 using FluentAssertions;
 using Moq;
 using Xunit;
@@ -36,36 +35,6 @@ namespace SnakesAndLadders.Kata.Tests
 
             // Assert
             token.Square.Should().Be(5);
-        }
-    }
-
-    public class Player
-    {
-        private readonly Token _token;
-
-        public Player(Token token)
-        {
-            _token = token;
-        }
-
-        public void MoveToken(IDiceRoller diceRoller)
-        {
-            _token.Move(diceRoller.Roll());
-        }
-    }
-
-    public interface IDiceRoller
-    {
-        int Roll();
-    }
-
-    public class DiceRoller : IDiceRoller
-    {
-        private readonly Random _random = new Random();
-
-        public int Roll()
-        {
-            return _random.Next(1, 7);
         }
     }
 }
