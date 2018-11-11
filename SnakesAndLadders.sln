@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnakesAndLadders.Kata", "SnakesAndLadders.Kata\SnakesAndLadders.Kata.csproj", "{743DDD85-1658-4352-A75D-C1BB781ED570}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnakesAndLadders.Kata.Tests", "SnakesAndLadders.Kata.Tests\SnakesAndLadders.Kata.Tests.csproj", "{6741EBA7-6D8F-4DF4-808D-F5A816EEFDB3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{743DDD85-1658-4352-A75D-C1BB781ED570}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{743DDD85-1658-4352-A75D-C1BB781ED570}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{743DDD85-1658-4352-A75D-C1BB781ED570}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{743DDD85-1658-4352-A75D-C1BB781ED570}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6741EBA7-6D8F-4DF4-808D-F5A816EEFDB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6741EBA7-6D8F-4DF4-808D-F5A816EEFDB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6741EBA7-6D8F-4DF4-808D-F5A816EEFDB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6741EBA7-6D8F-4DF4-808D-F5A816EEFDB3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
