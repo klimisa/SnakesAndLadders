@@ -43,16 +43,4 @@ namespace SnakesAndLadders.Kata.Tests
             token.Square.Should().Be(8);
         }
     }
-
-    public class Token
-    {
-        private int _square = 1;
-
-        public int Square => _square;
-
-        public void Move(int spaces)
-        {
-            _square += spaces;
-        }
-    }
 }
