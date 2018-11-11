@@ -34,6 +34,22 @@ namespace SnakesAndLadders.Kata.Tests
             // Assert
             token.Square.Should().Be(4);
         }
+        
+        [Fact]
+        public void GiveTokenIsOnSquareOne_WhenTheTokenIsMovedThreeSpacesAndThenFourSpaces_ThenTokenIsOnSquareEight()
+        {
+            // Arrange
+            var board = new Board();
+            var token = new Token();
+            board.PlaceToken(token);
+
+            // Act
+            token.Move(3);
+            token.Move(4);
+
+            // Assert
+            token.Square.Should().Be(8);
+        }
     }
 
     public class Board
