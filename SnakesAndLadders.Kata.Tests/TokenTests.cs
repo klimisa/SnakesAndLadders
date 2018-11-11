@@ -9,12 +9,30 @@ namespace SnakesAndLadders.Kata.Tests
         [Fact]
         public void GivenThenGameIsStarted_WhenTokenIsPlacedOnBoard_ThenTokenIsOnSquareOne()
         {
+            // Arrange
             var board = new Board();
             var token = new Token();
 
+            // Act
             board.PlaceToken(token);
 
-            token.SquareNo.Should().Be(1);
+            // Assert
+            token.Square.Should().Be(1);
+        }
+
+        [Fact]
+        public void GiveTokenIsOnSquareOne_WhenTheTokenIsMovedThreeSpaces_ThenTokenIsOnSquareFour()
+        {
+            // Arrange
+            var board = new Board();
+            var token = new Token();
+            board.PlaceToken(token);
+
+            // Act
+            token.Move(3);
+
+            // Assert
+            token.Square.Should().Be(4);
         }
     }
 
@@ -22,12 +40,19 @@ namespace SnakesAndLadders.Kata.Tests
     {
         public void PlaceToken(Token token)
         {
-            token.SquareNo =1;
+            
         }
     }
 
     public class Token
     {
-        public int SquareNo { get; set; }
+        private int _square = 1;
+
+        public int Square => _square;
+
+        public void Move(int spaces)
+        {
+            _square += spaces;
+        }
     }
 }
