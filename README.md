@@ -1,5 +1,10 @@
 # SnakesAndLadders
 Snakes And Ladders Kata 
 
-The Winning number should not belong to Player but Board.
-Player is Winner should be then delegated to Board.
+### Finished
+Feature 1 - Moving Your Token
+
+
+### Impovements
+The Winning square should not belong to Player but to Board.
+Player isWinner should be then delegated to Board.
